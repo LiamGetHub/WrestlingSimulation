@@ -19,7 +19,9 @@ public class Match {
 
         int random = (int) (Math.random() * 2); // Generate 0 or 1
         winner = (random == 0) ? wrestler1 : wrestler2; // Choose the winner based on random value
+        System.out.println(wrestler1.getName() + " and " + wrestler2.getName() + " are wrestling...");
         System.out.println("The winner is: " + winner.getName());
+        System.out.println("-----------------------------------\n");
     }
 
     // Getter for the winner
