@@ -28,6 +28,11 @@ public class Tournament {
                 match.conductMatch();
                 winners.add(match.getWinner());
             }
+            //print winner of matches out
+            for (int i = 0; i < winners.size() -1; i++) {
+                System.out.println("winner of match " + (i+1) + ": "+winners.get(i));
+
+            }
             wrestlers = winners;
             winners = new ArrayList<>();
         }
